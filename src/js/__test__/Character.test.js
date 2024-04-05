@@ -1,11 +1,11 @@
 import Character from '../Character';
 
 test('should check the class Character no name < 2', () => {
-  expect(() => new Character('a', 'Bowman')).toThrowError(new Error('Ошибка'));
+  expect(() => new Character('a', 'Bowman')).toThrowError(new Error('Имя должно содержать от 2 до 10 символов'));
 });
 
 test('should check the class Character no name', () => {
-  expect(() => new Character('Player', 'Hero')).toThrowError(new Error('Ошибка'));
+  expect(() => new Character('Player', 'Hero')).toThrowError(new Error('Неизвестный тип'));
 });
 
 test('should check the class Character no name', () => {
